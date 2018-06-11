@@ -3,6 +3,7 @@
   "description": "Orchestrator SDK for Full Stack PHP projects.",
   "keywords": ["StaySense", "Orchestrator", "sdk"],
   "license": "Apache-2.0",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "StaySense",
