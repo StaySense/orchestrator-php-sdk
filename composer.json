@@ -10,11 +10,10 @@
     }
   ],
   "require": {
+      "php": ">=5.5",
       "guzzlehttp/guzzle": "^6.3",
       "kevinrob/guzzle-cache-middleware": "^3.2",
-      "php": ">=5.5",
-    "StaySense/Orchestrator": "@dev",
-    "doctrine/cache": "^1.6"
+      "doctrine/cache": "^1.6"
   },
   "autoload": {
     "psr-4": {
