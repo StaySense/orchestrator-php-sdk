@@ -10,7 +10,7 @@ How To Use
 ### Installation
 The easiest way to install the PHP SDK is via Composer:
 
-`composer require staysense/orchestrator-php-sdk`
+`composer require staysense/orchestrator`
 
 ### Usage
 
