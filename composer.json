@@ -1,0 +1,32 @@
+{
+  "name": "StaySense/Orchestrator",
+  "description": "Orchestrator SDK for Full Stack PHP projects.",
+  "keywords": ["StaySense", "Orchestrator", "sdk"],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "StaySense",
+      "email": "developers@staysense.com"
+    }
+  ],
+  "require": {
+      "guzzlehttp/guzzle": "^6.3",
+      "kevinrob/guzzle-cache-middleware": "^3.2",
+      "php": ">=5.5",
+    "StaySense/Orchestrator": "@dev",
+    "doctrine/cache": "^1.6"
+  },"repositories": {
+      "dev-package": {
+        "type": "path",
+        "url": "src/StaySense/Orchestrator",
+        "options": {
+          "symlink": true
+        }
+      }
+    },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}

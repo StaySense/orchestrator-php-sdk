@@ -1,0 +1,4 @@
+/cache-dir
+/vendor
+/php-sdk/vendor
+.DS_Store
