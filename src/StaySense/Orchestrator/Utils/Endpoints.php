@@ -45,7 +45,8 @@ class Endpoints {
       "createCampaign" => $this->_host . "/api/v1/create-campaign",
       "createExperiment" => $this->_host . "/api/v1/create-experiment",
       "createVariant" => $this->_host . "/api/v1/create-variant",
-      "logConversion" => $this->_host . "/api/v1/log-conversion"
+      "logConversion" => $this->_host . "/api/v1/log-conversion",
+      "createSite" => $this->_host ."/api/v1/create-site"
     );
   }
 }
