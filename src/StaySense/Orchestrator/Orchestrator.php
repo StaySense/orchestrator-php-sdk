@@ -147,7 +147,7 @@ class Orchestrator
       $request = $this->_http->requestFactory("getCampaigns", $args);
 
       $result = $this->_http->executeRequest($request);
-      
+
     } catch (Throwable $exception) {
       throw new HTTPRequestFailed($exception->getMessage(), 1);
     }
@@ -292,7 +292,36 @@ class Orchestrator
   }
 
 
+  /**
+   * Public function that creates a site for a series of campaigns and experiments
+   * to be housed under. Essentially a logical grouping key.
+   *
+   * @param  [type] $URL    [description]
+   * @param  [type] $userID [description]
+   * @return [type]         [description]
+   */
+  public function createSite($URL, $userID)
+  {
+    if(empty($URL) || empty($userID))
+    {
+      return false;
+    }
 
+    $args = [
+      "site_url" => $URL,
+      "user_id" => $userID
+    ];
+
+    try {
+      $request = $this->_http->requestFactory("createSite", $args, 'GET');
+
+      $result = $this->_http->executeRequest($request);
+    } catch (Throwable $exception) {
+      throw new HTTPRequestFailed($exception->getMessage(), 1);
+    }
+
+    return $result;
+  }
 
   /**
    * Sends request to the platform to determine which variant to serve
