@@ -4,6 +4,25 @@ StaySense - Orchestrator PHP SDK
 ================================
 PHP SDK for Orchestrator for full-stack deployments
 
+Orchestrator is a machine-learning powered conversion optimization platform built specifically for the travel industry and designed to overcome the inherent challenges associated with traditional A/B testing, namely:
+
+1. Large sample sizes (and therefore long testing periods for most websites) are generally required to achieve incremental improvement.
+2. There is generally large conversion “cost” that accompanies point 1 with traffic spend on a losing variant.
+3. Many frequentist testing approaches (traditional A/B/n) are not able to react to real-time seasonality/demographic changes effectively.
+4. Difficulty (and/or great expense) with currently available commercial A/B testing tools to serve a large number of page optimizations simultaneously.
+
+Orchestrator™ was designed specifically with these challenges in mind and over comes them in these ways:
+
+1. A machine-learning based decision model that is capable of choosing a winning variant early on in the test cycle while continuing to test other options while minimizing conversion "cost".
+  1. This allows meaningful gains to be produced in a much shorter amount of time than traditional A/B tests.
+2. A decision model that is capable of running continuously (read: forever) and reacting to changes over time.
+3. A model that is able to provide incremental improvement in real-time, even for sites with relatively low volume.
+  1. This is especially important when considering the relatively low traffic levels on the typical vacation rental / travel website.
+4. A platform to solve issues traditionally difficult to solve with A/B testing, E.g., “which ‘lead photo’ in a search results set of properties earns the most clicks to the listing out of all property photos?” at scale and cost effectively.
+5. Delivers a SaaS platform that enables large-scale, micro-optimization testing and improvements that would have been difficult and/or cumbersome to accomplish in the past in the travel industry.
+
+Orchestrator is not geared towards finding the absolute truth, but helping companies find the best choice to provide incremental gains at scale. This enables companies to test more ideas, faster, and to discover value where previously there wasn't any.
+
 How To Use
 ----------
 
@@ -68,7 +87,7 @@ if($variantID = '93a1jx')
 $conversion = $orchestratorAPI->logConversionEvent($campaignID, $experimentID, $variantID);
 ```
 
-#### 6. Make It Rain 
+#### 6. Make It Rain
 ![alt text](https://i.giphy.com/media/l41lZccR1oUigYeNa/giphy-downsized.gif)
 
 ### Important Notes
