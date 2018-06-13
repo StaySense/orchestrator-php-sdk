@@ -2,7 +2,9 @@
 
 StaySense - Orchestrator PHP SDK
 ================================
-PHP SDK for Orchestrator for full-stack deployments
+PHP SDK for Orchestrator for full-stack deployments.
+
+Company Website: <http://staysense.com>
 
 Orchestrator is a machine-learning powered conversion optimization platform built specifically for the travel industry and designed to overcome the inherent challenges associated with traditional A/B testing, namely:
 
