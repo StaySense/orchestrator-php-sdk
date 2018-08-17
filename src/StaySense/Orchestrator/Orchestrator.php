@@ -162,13 +162,14 @@ class Orchestrator
    * @param  string $siteId [description]
    * @return arrayObject         [description]
    */
-  public function createCampaign($siteId, $type, $name = '', $percent = 100)
+  public function createCampaign($siteId, $type, $name = '', $percent = 100, $engine_type = null)
   {
     $args = [
       "site_id" => $siteId,
       "campaign_name" => $name,
       "campaign_type" => $type,
-      "traffic_percent" => $percent
+      "traffic_percent" => $percent,
+      "engine_type" => $engine_type
     ];
 
     try {
