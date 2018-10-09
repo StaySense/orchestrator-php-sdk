@@ -92,7 +92,11 @@ class HTTPClient
      */
     if(file_exists($this->_cacheDir) && !is_writeable($this->_cacheDir))
     {
-      throw new CacheNotWriteableException("Cache directory exists but is not writeable.", 1);
+      try {
+        chmod($this->_cacheDir, 0755);
+      } catch (Throwable $exception) {
+        throw new CacheNotWriteableException("Cache directory exists but is not writeable.", 1);
+      }
     }elseif(!file_exists($this->_cacheDir))
     {
       try{
